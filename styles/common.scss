@@ -1,0 +1,42 @@
+.action-button {
+    background-color: $color-blue-indigo;
+    color: $text-color-white;
+    width: 100%;
+    height: 48px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 2px;
+    border: none;
+    @include for-large-up {
+        width: 160px;
+    }
+    &__secondary {
+        color: $text-color-black;
+        background-color: $color-white;
+        width: 100%;
+        height: 48px;
+        font-size: 18px;
+        font-weight: 700;
+        border-radius: 2px;
+        border: none;
+    }
+}
+
+.hide_desktop {
+    @include for-large-up {
+        display: none;
+    }
+}
+
+.hide_mobile {
+    @include for-large-down {
+        display: none;
+    }
+}
+
+.icon-arrow_right {
+    display: block;
+    background-image: url('/img/icon-arrow-right.png');
+    width: 7px;
+    height: 12px;
+}
